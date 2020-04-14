@@ -1,0 +1,46 @@
+{
+  "name": "@loggerix/browser",
+  "version": "0.1.0",
+  "license": "MIT",
+  "author": "Matt Revell",
+  "main": "dist/index.js",
+  "module": "dist/browser.esm.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "start": "tsdx watch",
+    "build": "tsdx build",
+    "test": "tsdx test",
+    "lint": "tsdx lint"
+  },
+  "peerDependencies": {},
+  "husky": {
+    "hooks": {
+      "pre-commit": "tsdx lint"
+    }
+  },
+  "prettier": {
+    "printWidth": 80,
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  },
+  "dependencies": {
+    "@loggerix/core": "0.1.0",
+    "@loggerix/standard-transformer": "0.1.0",
+    "@types/moxios": "^0.4.9",
+    "axios": "^0.19.2",
+    "fp-ts": "^2.5.3",
+    "io-ts": "^2.1.3",
+    "moxios": "^0.4.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^25.2.1",
+    "husky": "^4.2.5",
+    "tsdx": "^0.13.2",
+    "tslib": "^1.11.1",
+    "typescript": "^3.8.3"
+  }
+}

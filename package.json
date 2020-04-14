@@ -1,0 +1,19 @@
+{
+  "name": "loggerix",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "bootstrap": "lerna bootstrap",
+    "wizard": "lerna-wizard",
+    "start": "lerna run start --parallel",
+    "build": "lerna run build",
+    "lerna:link": "lerna link"
+  },
+  "devDependencies": {
+    "@types/jest": "^25.2.1",
+    "lerna": "^3.20.2",
+    "lerna-wizard": "^1.1.1"
+  }
+}
